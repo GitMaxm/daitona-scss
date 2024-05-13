@@ -1,0 +1,23 @@
+:root {
+	--container-width: 1230px;
+	--container-padding: 15px;
+
+	--font-main: "Oswald", "Arial Narrow", "Helvetica", "Arial", sans-serif;
+	--font-primary: "Helvetica", sans-serif;
+	--font-secondary: "Merriweather", serif;
+
+	--page-bg: #fff;
+	--text-color: #000;
+	--text-muted: #909090;
+	--accent: #35aff4;
+	--text-white: #fff;
+
+	// --space: 0.5rem;
+	// --space-sm: calc(var(--space) / 2);
+	// --space-lg: calc(var(--space) * 4);
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}
