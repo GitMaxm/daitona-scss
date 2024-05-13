@@ -1,35 +1,50 @@
-function clientsCreatImg() {
-    function addImage(src) {
-        var picture = document.createElement('picture');
-        var imgContainer = document.createElement('div');
-        var img = document.createElement('img');
-        img.src = src;
-        img.alt = "Client Image";
-        imgContainer.appendChild(img);
-        picture.appendChild(imgContainer);
-        document.getElementById('clientsGrid').appendChild(picture);
+function btnDarkMode() {
+
+    const btnDarkMode = document.querySelector(".dark-mode-btn");
+
+    // 1. Проверка темной темы на уровне системных настроек
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        btnDarkMode.classList.add("dark-mode-btn--active");
+        document.body.classList.add("dark");
     }
 
-    // Пример загрузки изображений (вы можете заменить на свою логику загрузки)
-    var images = [
-        '/img/clients/1.png',
-        '/img/clients/2.webp',
-        '/img/clients/3.png',
-        '/img/clients/4.png',
-        '/img/clients/5.png',
-        '/img/clients/6.png',
-        '/img/clients/7.png',
-        '/img/clients/8.png',
-        '/img/clients/9.png',
-        '/img/clients/10.png',
-        '/img/clients/11.png',
-        '/img/clients/12.png'
-    ];
+    // 2. Проверка темной темы в localStorage
+    if (localStorage.getItem('darkMode') === 'dark') {
+        btnDarkMode.classList.add("dark-mode-btn--active");
+        document.body.classList.add("dark");
+    } else if (localStorage.getItem("darkMode") === "light") {
+        btnDarkMode.classList.remove("dark-mode-btn--active");
+        document.body.classList.remove("dark");
+    }
 
-    // Добавляем каждое изображение в разметку
-    images.forEach(function (image) {
-        addImage(image);
-    });
-}
+    // Если меняются системные настройки, меняем тему
+    window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+            const newColorScheme = event.matches ? "dark" : "light";
 
-clientsCreatImg();
+            if (newColorScheme === "dark") {
+                btnDarkMode.classList.add("dark-mode-btn--active");
+                document.body.classList.add("dark");
+                localStorage.setItem("darkMode", "dark");
+            } else {
+                btnDarkMode.classList.remove("dark-mode-btn--active");
+                document.body.classList.remove("dark");
+                localStorage.setItem("darkMode", "light");
+            }
+        });
+
+    // Включение ночного режима по кнопке
+    btnDarkMode.onclick = function () {
+        btnDarkMode.classList.toggle("dark-mode-btn--active");
+        const isDark = document.body.classList.toggle("dark");
+
+        if (isDark) {
+            localStorage.setItem("darkMode", "dark");
+        } else {
+            localStorage.setItem("darkMode", "light");
+        }
+    };
+};
+
+btnDarkMode();

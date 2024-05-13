@@ -1,0 +1,48 @@
+.btn {
+    display: inline-block;
+    height: 48px;
+    padding: 12px 28px;
+
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: var(--white);
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn-outline {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    height: 48px;
+    padding: 12px 20px;
+
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: var(--text-white);
+    color: #000;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn-outline:hover {
+    opacity: 0.8;
+}
+
+.btn-outline:active {
+    position: relative;
+    top: 1px;
+}
