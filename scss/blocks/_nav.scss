@@ -2,11 +2,18 @@
     padding: 20px 0;
     border: 1px solid #26292d;
     background-color: var(--dark-bg);
+    background: #1a1d21;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 296 !important;
+    position: fixed;
 }
 
 .nav-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     column-gap: 30px;
     row-gap: 20px;

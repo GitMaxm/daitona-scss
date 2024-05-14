@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html {
 	scroll-behavior: smooth;
@@ -12,6 +12,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 
 	font-size: 18px;
+	font-weight: 300;
 }
 
 img {
@@ -25,7 +26,11 @@ img {
 	text-transform: uppercase;
 }
 
+.title-3 {
+	font-size: 30px;
+}
+
 .title-4 {
-	font-size: 26px;
 	font-weight: 600;
+	font-size: 26px;
 }
