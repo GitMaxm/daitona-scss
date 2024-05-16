@@ -1,0 +1,32 @@
+.header-content__form {
+    margin: 0 auto;
+}
+
+.header-form {
+    padding: 30px 150px;
+    border: 1px solid var(--dark-bg);
+}
+
+.header-form__input {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.header-form__text {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.header-form__title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.btn-form {
+}
