@@ -13,10 +13,22 @@
 	--text-muted: #909090;
 	--accent: #35aff4;
 	--text-white: #fff;
+	--sun-clr: #f3d05e;
+
+	// кнопа тт
+	--dark-clr: hsl(246, 23%, 16%);
+	--light-clr: hsl(240, 100%, 98%);
+	--clr-foreground: var(--dark-clr);
+	--clr-background: var(--light-clr);
+	--fill-sun: var(--dark-clr);
 }
 
-.dark {
+.dark-theme {
+	--fill-sun: var(--sun-clr);
+	--clr-foreground: var(--light-clr);
+	--clr-background: var(--dark-clr);
 	--page-bg: #252526;
 	--text-color: #fff;
+	--page-bg: #252526;
 	--dark-bg: #fff;
 }

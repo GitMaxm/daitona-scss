@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="light-theme">
 
     <header class="header">
 
@@ -37,22 +37,17 @@
 
                         <div class="nav-row nav-footer">
 
-                            <button class="dark-mode-btn">
-                                <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
-                                <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
-                            </button>
-
                             <ul class="nav-list">
-                                <li class="nav-list__item"><a href="#!" class="nav-list__link">О НАС</a>
+                                <li class="nav-list__item"><a href="#about" class="nav-list__link">О НАС</a>
                                 </li>
                                 <li class="nav-list__item">
                                     <a href="#!" class="nav-list__link ">УСЛУГИ</a>
                                 </li>
                                 <li class="nav-list__item">
-                                    <a href="#!" class="nav-list__link">КЕЙСЫ</a>
+                                    <a href="#case" class="nav-list__link">КЕЙСЫ</a>
                                 </li>
                                 <li class="nav-list__item">
-                                    <a href="#!" class="nav-list__link">НАШИ КЛИЕНТЫ</a>
+                                    <a href="#clients" class="nav-list__link">НАШИ КЛИЕНТЫ</a>
                                 </li>
                                 <li class="nav-list__item">
                                     <a href="#!" class="nav-list__link">КОМАНДА МЕЧТЫ</a>
@@ -61,6 +56,24 @@
                                     <a href="#!" class="nav-list__link">КОНТАКТЫ</a>
                                 </li>
                             </ul>
+
+                            <!-- <button class="dark-mode-btn">
+                                <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                                <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                            </button> -->
+
+                            <button id="switch-theme" aria-label="Включить темную тему">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                    viewBox="0 0 472.39 472.39">
+                                    <g class="toggle-sun">
+                                        <path
+                                            d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+                                    </g>
+                                    <g class="toggle-circle">
+                                        <circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
+                                    </g>
+                                </svg>
+                            </button>
 
                         </div>
                     </div>
@@ -96,7 +109,24 @@
 
                 </div>
 
+
                 <div class="header-content__form">
+                    <div class="brand-logo"></div>
+                    <div class="title-5 header-form__title">Что нужно сделать + чтобы получить + где/когда</div>
+                    <form class="form" action="" method="post">
+                        <div class="header-form__block">
+                            <label class="header-form__label">Введите имя</label>
+                            <input class="header-form__input" type="text" placeholder="Максим" />
+                        </div>
+                        <div class="header-form__block">
+                            <label class="header-form__label">Телефон</label>
+                            <input class="header-form__input" type="tel" placeholder="+7-999-99-99" />
+                        </div>
+                        <button class="btn-form" type="submit">Узнать</button>
+                    </form>
+                </div>
+
+                <!-- <div class="header-content__form">
                     <p class="header-form__text">Что нужно сделать + чтобы получить + где/когда</p>
 
                     <div class="header-form">
@@ -109,7 +139,7 @@
                             <button class="btn-form" type="button">Узнать</button>
                         </form>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -119,7 +149,7 @@
     <main>
 
         <!-- о нас -->
-        <section class="about container">
+        <section class="about container" id="about">
 
             <div class="about__title">
                 <h3 class="title-3">Помогаем развиваться компаниям при помощи контент маркетинга, ивент маркетинга и
@@ -203,7 +233,7 @@
         </section>
 
         <!-- клиенты -->
-        <section class="clients container">
+        <section class="clients container" id="clients">
             <div class="clients__title ">
                 <h2 class="title-2">НАШИ КЛИЕНТЫ</h2>
             </div>
@@ -248,88 +278,6 @@
             </div>
         </section>
 
-
-
-        <!-- услуги -->
-        <!-- <section class="services" id="services">
-            <div class="container">
-
-                <div class="services__title">
-                    <h2 class="title-2">Услуги</h2>
-                </div>
-
-                <div class="services__cards">
-
-                    <a class="card">
-                        <img class="card__img" src="img/about/01.jpg"
-                            alt="Станки для изготовления изделий из пластмассы">
-                        <h4 class="title-4 card__title">Аналитика</h4>
-                        <p class="card__text">Разрабатываем идеологию и концепцию проекта, предлагаем нестандартные
-                            решения, создаем
-                            функциональные воронки, методологии, составляем общий маркетинговый план проекта, раскрываем
-                            потенциал вашего бизнеса и разрабатываем програмно-событийное наполнение.
-                        </p>
-                    </a>
-
-                    <a class="card">
-                        <img class="card__img" src="img/about/02.jpg"
-                            alt="Станки для изготовления изделий из пластмассы">
-                        <h4 class="title-4 card__title">Маркетинг</h3>
-                            <p class="card__text">Разрабатываем маркетинговую концепцию, а также стратегию с
-                                поочередно-сменяющимися этапами
-                                ребрендинга, не мешая привычному ведению бизнеса, подготавливаем контент план целевые
-                                группы
-                            </p>
-                    </a>
-                    <a class="card">
-                        <img class="card__img" src="img/about/02.jpg"
-                            alt="Станки для изготовления изделий из пластмассы">
-                        <h4 class="title-4 card__title">Маркетинг</h3>
-                            <p class="card__text">Разрабатываем маркетинговую концепцию, а также стратегию с
-                                поочередно-сменяющимися этапами
-                                ребрендинга, не мешая привычному ведению бизнеса, подготавливаем контент план целевые
-                                группы
-                            </p>
-                    </a>
-
-                    <a class="card">
-                        <img class="card__img" src="img/about/02.jpg"
-                            alt="Станки для изготовления изделий из пластмассы">
-                        <h4 class="title-4 card__title">Маркетинг</h3>
-                            <p class="card__text">Разрабатываем маркетинговую концепцию, а также стратегию с
-                                поочередно-сменяющимися этапами
-                                ребрендинга, не мешая привычному ведению бизнеса, подготавливаем контент план целевые
-                                группы
-                            </p>
-                    </a>
-                    <a class="card">
-                        <img class="card__img" src="img/about/01.jpg"
-                            alt="Станки для изготовления изделий из пластмассы">
-                        <h4 class="title-4 card__title">Маркетинг</h3>
-                            <p class="card__text">Разрабатываем маркетинговую концепцию, а также стратегию с
-                                поочередно-сменяющимися этапами
-                                ребрендинга, не мешая привычному ведению бизнеса, подготавливаем контент план целевые
-                                группы
-                            </p>
-                    </a>
-
-                    <a class="card">
-                        <img class="card__img" src="img/about/03.jpg"
-                            alt="Станки для изготовления изделий из пластмассы">
-                        <h4 class="title-4 card__title">Концепция</h3>
-                            <p class="card__text">Разрабатываем идеологию и концепцию проекта, предлагаем нестандартные
-                                решения, создаем
-                                функциональные воронки, методологии, составляем общий маркетинговый план проекта,
-                                раскрываем
-                                потенциал вашего бизнеса и разрабатываем програмно-событийное наполнение.
-                            </p>
-                    </a>
-
-                </div>
-            </div>
-        </section> -->
-
-
         <!-- отзывы -->
         <!-- <section class="reviews">
         </section> -->
@@ -337,7 +285,7 @@
 
 
         <!-- работы, кейсы -->
-        <section class="case">
+        <section class="case" id="case">
             <div class="container">
 
                 <div class="case__title">
@@ -368,6 +316,13 @@
                     </div>
 
                 </div>
+
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="services" id="services">
+            <div class="container">
 
             </div>
         </section>

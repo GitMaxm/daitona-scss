@@ -1,50 +1,70 @@
-function btnDarkMode() {
-
-    const btnDarkMode = document.querySelector(".dark-mode-btn");
+function themeToggle() {
+    const themeToggle = document.querySelector("#switch-theme");
 
     // 1. Проверка темной темы на уровне системных настроек
     if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        btnDarkMode.classList.add("dark-mode-btn--active");
-        document.body.classList.add("dark");
+        document.body.classList.contains("light-theme")
+            ? enableDarkMode(themeToggle)
+            : enableLightMode(themeToggle);
+    }
+
+    function enableDarkMode(themeToggle) {
+        document.body.classList.remove("light-theme");
+        document.body.classList.add("dark-theme");
+        themeToggle.classList.remove("light-theme");
+        themeToggle.classList.add("dark-theme");
+        themeToggle.setAttribute("aria-label", "Переключить на светлую тему");
+    }
+
+    function enableLightMode(themeToggle) {
+        document.body.classList.remove("dark-theme");
+        document.body.classList.add("light-theme");
+        themeToggle.classList.remove("dark-theme");
+        themeToggle.classList.add("light-theme");
+        themeToggle.setAttribute("aria-label", "Переключить на темную тему");
     }
 
     // 2. Проверка темной темы в localStorage
-    if (localStorage.getItem('darkMode') === 'dark') {
-        btnDarkMode.classList.add("dark-mode-btn--active");
-        document.body.classList.add("dark");
+    if (localStorage.getItem('darkMode') === 'dark-theme') {
+        themeToggle.classList.add("light-theme");
+        document.body.classList.add("dark-theme");
     } else if (localStorage.getItem("darkMode") === "light") {
-        btnDarkMode.classList.remove("dark-mode-btn--active");
-        document.body.classList.remove("dark");
+        themeToggle.classList.remove("light-theme");
+        document.body.classList.remove("dark-theme");
     }
 
     // Если меняются системные настройки, меняем тему
     window
         .matchMedia("(prefers-color-scheme: dark)")
         .addEventListener("change", (event) => {
-            const newColorScheme = event.matches ? "dark" : "light";
+            const newColorScheme = event.matches ? "dark-theme" : "light";
 
-            if (newColorScheme === "dark") {
-                btnDarkMode.classList.add("dark-mode-btn--active");
-                document.body.classList.add("dark");
-                localStorage.setItem("darkMode", "dark");
+            if (newColorScheme === "dark-theme") {
+                themeToggle.classList.add("light-theme");
+                document.body.classList.add("dark-theme");
+                localStorage.setItem("darkMode", "dark-theme");
+                enableDarkMode(themeToggle);
             } else {
-                btnDarkMode.classList.remove("dark-mode-btn--active");
-                document.body.classList.remove("dark");
+                themeToggle.classList.remove("light-theme");
+                document.body.classList.remove("dark-theme");
                 localStorage.setItem("darkMode", "light");
+                enableLightMode(themeToggle);
             }
         });
 
     // Включение ночного режима по кнопке
-    btnDarkMode.onclick = function () {
-        btnDarkMode.classList.toggle("dark-mode-btn--active");
-        const isDark = document.body.classList.toggle("dark");
+    themeToggle.onclick = function () {
+        themeToggle.classList.toggle("light-theme");
+        const isDark = document.body.classList.toggle("dark-theme");
 
         if (isDark) {
-            localStorage.setItem("darkMode", "dark");
+            localStorage.setItem("darkMode", "dark-theme");
+            enableDarkMode(themeToggle);
         } else {
             localStorage.setItem("darkMode", "light");
+            enableLightMode(themeToggle);
         }
     };
-};
+}
 
-btnDarkMode();
+themeToggle();
