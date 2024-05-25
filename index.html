@@ -114,17 +114,20 @@
                 <div class="header-content__form">
                     <div class="brand-logo"></div>
                     <div class="title-5 header-form__title">Что нужно сделать + чтобы получить + где/когда</div>
-                    <form class="form" action="" method="post">
+
+                    <form action="mail.php" class="form" method="post">
                         <div class="header-form__block">
                             <label class="header-form__label">Введите имя</label>
-                            <input class="header-form__input" type="text" placeholder="Максим" />
+                            <input class="header-form__input" type="text" name="name" placeholder="Максим" required />
                         </div>
                         <div class="header-form__block">
                             <label class="header-form__label">Телефон</label>
-                            <input class="header-form__input" type="tel" placeholder="+7-999-99-99" />
+                            <input class="header-form__input" type="text" name="phone" placeholder="+7-999-99-99"
+                                required />
                         </div>
                         <button class="btn-form" type="submit">Узнать</button>
                     </form>
+
                 </div>
 
                 <!-- <div class="header-content__form">
@@ -380,8 +383,12 @@
         </section>
 
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
