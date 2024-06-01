@@ -8,11 +8,10 @@
     <title>Дайтона</title>
     <link rel="stylesheet" href="./css/main.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
-<body class="light-theme">
+<body>
 
     <header class="header">
 
@@ -58,23 +57,12 @@
                                 </li>
                             </ul>
 
-                            <!-- <button class="dark-mode-btn">
+                            <button class="dark-mode-btn">
                                 <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
                                 <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
-                            </button> -->
-
-                            <button id="switch-theme" aria-label="Включить темную тему">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                    viewBox="0 0 472.39 472.39">
-                                    <g class="toggle-sun">
-                                        <path
-                                            d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
-                                    </g>
-                                    <g class="toggle-circle">
-                                        <circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
-                                    </g>
-                                </svg>
                             </button>
+
+
 
                         </div>
                     </div>
@@ -111,26 +99,9 @@
                 </div>
 
 
+
+
                 <div class="header-content__form">
-                    <div class="brand-logo"></div>
-                    <div class="title-5 header-form__title">Что нужно сделать + чтобы получить + где/когда</div>
-
-                    <form action="mail.php" class="form" method="post">
-                        <div class="header-form__block">
-                            <label class="header-form__label">Введите имя</label>
-                            <input class="header-form__input" type="text" name="name" placeholder="Максим" required />
-                        </div>
-                        <div class="header-form__block">
-                            <label class="header-form__label">Телефон</label>
-                            <input class="header-form__input" type="text" name="phone" placeholder="+7-999-99-99"
-                                required />
-                        </div>
-                        <button class="btn-form" type="submit">Узнать</button>
-                    </form>
-
-                </div>
-
-                <!-- <div class="header-content__form">
                     <p class="header-form__text">Что нужно сделать + чтобы получить + где/когда</p>
 
                     <div class="header-form">
@@ -138,12 +109,32 @@
 
                         <form class="form" action="" method="post">
 
-                            <input class="header-form__input" type="text" placeholder="Введите имя">
-                            <input class="header-form__input" type="tel" placeholder="Телефон">
-                            <button class="btn-form" type="button">Узнать</button>
+                            <div class="form-wrapper__input">
+                                <div class="form-wrapper__label">
+                                    <label for="name">Имя</label>
+                                    <input id="name" class="header-form__input" type="text" placeholder="Иван">
+                                </div>
+                                <div class="form-wrapper__label">
+                                    <label for="tel">Телефон</label>
+                                    <input id="tel" class="header-form__input" type="tel"
+                                        placeholder="+7 (999) 999-99-99">
+
+                                </div>
+                                <div class="form-wrapper__label">
+                                    <label for="email">Email</label>
+                                    <input id="email" class="header-form__input" type="email"
+                                        placeholder="dai@tona.online">
+                                </div>
+
+                            </div>
+
+                            <div class="form-wrapper__btn">
+                                <button class="btn-form" type="button">Узнать</button>
+                            </div>
+
                         </form>
                     </div>
-                </div> -->
+                </div>
 
             </div>
         </div>
@@ -330,66 +321,12 @@
             <div class="services__title container">
                 <h2 class="title-2">Внедряйте лучшие методики с видимым и ощутимым результатом</h2>
             </div>
-            <div class="services__slider">
-                <div class="slide active">
-                    <div class="card">
-                        <div class="card__img" id="img03"></div>
-                        <div class="card__content">
-                            <p class="card__content-theme">Lifestyle</p>
-                            <h2 class="card__content-header"> A lonely road</h2>
-                            <p class="card__content-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Dicta porro, tempora consequuntur vel dolore assumenda aspernatur cum dignissimos unde
-                                reprehenderit sint? Neque, id consequuntur. Quibusdam sit officiis debitis corrupti.
-                                Quasi.</p>
-                            <a href="#!" class="card__content-link">Read</a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="slide">
-                    <div class="card">
-                        <div class="card__img" id="img03"></div>
-                        <div class="card__content">
-                            <p class="card__content-theme">Lifestyle</p>
-                            <h2 class="card__content-header"> A lonely road</h2>
-                            <p class="card__content-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Dicta porro, tempora consequuntur vel dolore assumenda aspernatur cum dignissimos unde
-                                reprehenderit sint? Neque, id consequuntur. Quibusdam sit officiis debitis corrupti.
-                                Quasi.</p>
-                            <a href="#!" class="card__content-link">Read</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="card">
-                        <div class="card__img" id="img03"></div>
-                        <div class="card__content">
-                            <p class="card__content-theme">Lifestyle</p>
-                            <h2 class="card__content-header"> A lonely road</h2>
-                            <p class="card__content-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Dicta porro, tempora consequuntur vel dolore assumenda aspernatur cum dignissimos unde
-                                reprehenderit sint? Neque, id consequuntur. Quibusdam sit officiis debitis corrupti.
-                                Quasi.</p>
-                            <a href="#!" class="card__content-link">Read</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="prevnext">
-                    <button class="prevnext-button" id="prev"></button>
-                    <button class="prevnext-button" id="next"></button>
-                </div>
-            </div>
         </section>
 
     </main>
 
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/main.js"></script>
 
 </body>
