@@ -8,6 +8,8 @@
     <title>Дайтона</title>
     <link rel="stylesheet" href="./css/main.css" />
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a58693e5-1e8e-4308-8b3c-45bf0e2e603e&lang=ru_RU"
+        type="text/javascript"></script>
 
 </head>
 
@@ -31,7 +33,7 @@
                             <div class="nav-info">
                                 <a class="nav-info--tel" href="tel:+79990008585">+7 (999) 000-85-85</a>
                                 <p>С 09:00 ДО 18:00</p>
-                                <p>Перезвонить мне</p>
+                                <a class="nav-info--tel-form" href="#!">Перезвонить мне</a>
                             </div>
                         </div>
 
@@ -53,7 +55,7 @@
                                     <a href="#!" class="nav-list__link">КОМАНДА МЕЧТЫ</a>
                                 </li>
                                 <li class="nav-list__item">
-                                    <a href="#!" class="nav-list__link">КОНТАКТЫ</a>
+                                    <a href="#contacts" class="nav-list__link">КОНТАКТЫ</a>
                                 </li>
                             </ul>
 
@@ -317,17 +319,86 @@
         </section>
 
         <!-- Услуги -->
-        <section class="services" id="services">
+        <!-- <section class="services" id="services">
 
             <div class="services__title container">
                 <h2 class="title-2">Внедряйте лучшие методики с видимым и ощутимым результатом</h2>
             </div>
 
-        </section>
+        </section> -->
 
     </main>
 
+    <!-- Подвал, контакты  -->
+    <footer class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="title-2">Контакты</h2>
 
+            <div class="contacts__wrapper">
+
+                <div class="contacts__content">
+
+                    <ul class="contacts__content-list">
+
+                        <li class="contacts__content-item">
+                            <a class="contacts__content-item" href="tel:+79990008585">+7 (999) 000-85-85</a>
+                        </li>
+                        <li class="contacts__content-item">
+                            <a class="contacts__content-item" href="#!">г. Москва, Самая удобная улица, д. 100 1 этаж,
+                                офис 1</a>
+                        </li>
+                        <li class="contacts__content-item">
+                            <a class="contacts__content-item" href="mailto:dai@tona.online">dai@tona.online</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="contacts__content-list">
+
+                        <li class="contacts__content-item">
+                            <p>ИНН: 00000000000</p>
+                        </li>
+                        <li class="contacts__content-item">
+                            <p>ОГРНИП: 00000000000000</p>
+                        </li>
+
+                    </ul>
+
+                    <ul class="contacts__content-list">
+
+                        <li class="contacts__content-item">
+                            <a target="_blank" class="contacts__content-link" href="#!">
+                                Вопрос-ответ
+                            </a>
+                        </li>
+
+                        <li class="contacts__content-item">
+                            <a target="_blank" class="contacts__content-link" href="#!">
+                                Вакансии
+                            </a>
+                        </li>
+
+                        <li class="contacts__content-item">
+                            <a target="_blank" class="contacts__content-link" href="#!">
+                                Политика конфиденциальности
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <p class="contacts__content-text">© 2024. ДАЙТОНА. Все права защищены</p>
+                </div>
+
+                <div class="contacts-map" id="map"> </div>
+            </div>
+        </div>
+        <script>
+
+        </script>
+    </footer>
+
+
+    <script src="js/map.js"></script>
     <script src="js/main.js"></script>
 
 </body>

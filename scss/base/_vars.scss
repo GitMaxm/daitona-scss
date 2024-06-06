@@ -15,12 +15,12 @@
 	--text-white: #fff;
 
 	--nm-color-border: #1a1d21ec;
+	--nm-color-blue: #6eb0d0;
 }
 
 .dark {
-	--page-bg: #252526;
+	// --page-bg: #252526;
 	--text-color: #fff;
-	--page-bg: #252526;
-	--dark-bg: #fff;
-	--nm-color-border: #de6546;
+	--page-bg: rgb(41 56 70);
+	--dark-bg: rgb(49, 49, 90) --nm-color-border: #de6546;
 }
