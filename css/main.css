@@ -207,6 +207,35 @@ img {
 }
 
 /* Blocks */
+.map:hover [class*=copyrights-pane] {
+  opacity: 1;
+}
+
+/* Создать свою карту */
+[class*=gototech] {
+  display: none !important;
+}
+
+/* Baloon */
+[class*=balloon__layout],
+[class*=balloon__content] {
+  background-color: var(--page-bg) !important;
+  color: var(--text-color) !important;
+}
+
+[class*=balloon__tail]::after {
+  background-color: var(--page-bg) !important;
+}
+
+[class*=balloon_layout_panel] {
+  background-color: var(--page-bg) !important;
+}
+
+[class*=balloon__layout],
+[class*=balloon__content] a {
+  color: var(--nm-color-blue) !important;
+}
+
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -677,7 +706,6 @@ img {
 
 .swiper {
   margin: 0 auto;
-  width: 770px;
   padding-bottom: 50px !important;
   padding-top: 50px !important;
 }
