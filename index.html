@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
 </head>
 
@@ -27,7 +25,7 @@
                     <div class="nav-column">
                         <div class="nav-row nav-header">
                             <div class="logo">
-                                <img src="img/logo-clear.png" alt="">
+                                <img class="logo-img" src="img/logo/logo-day.png" alt="">
                             </div>
 
                             <p>Решаем проблемы при помощи контента и событийного маркетинга с 2016 года</p>
@@ -335,42 +333,46 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <div class="swiper-slide__block" style="background-image: url(./img/swiper/01@2x.jpg);">
-                                <h5 class="title-5 swiper-slide__title">Lorem, ipsum dolor.</h5>
-                                <p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Voluptate qui provident nemo
-                                    quis, similique laborum aliquam minus accusamus asperiores</p>
-                                <a class="swiper-slide__link" href="#!">Подробнее...</a>
+                            <div class="swiper-slide__block" style="background-image: url(./img/services/01.jpg);">
+
+                                <div class="swiper-slide__content">
+                                    <h5 class="title-5 swiper-slide__title">Lorem, ipsum dolor.</h5>
+                                    <p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Voluptate qui provident nemo
+                                        quis, similique laborum aliquam minus accusamus asperiores</p>
+                                    <a class="swiper-slide__link" data-fancybox href="#hidden">Подробнее...</a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="swiper-slide__block" style="background-image: url(./img/swiper/02@2x.jpg);">
-                                <h5 class="title-5 swiper-slide__title">Lorem, ipsum dolor.</h5>
-                                <p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Voluptate qui provident nemo
-                                    quis, similique laborum aliquam minus accusamus asperiores</p>
-                                <a class="swiper-slide__link" href="#!">Подробнее...</a>
+                            <div class="swiper-slide__block" style="background-image: url(./img/services/02.jpg);">
+                                <div class="swiper-slide__content">
+                                    <h5 class="title-5 swiper-slide__title">Lorem, ipsum dolor.</h5>
+                                    <p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Voluptate qui provident nemo
+                                        quis, similique laborum aliquam minus accusamus asperiores</p>
+                                    <a class="swiper-slide__link" data-fancybox href="#hidden">Подробнее...</a>
+                                </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
-                            <div class="swiper-slide__block" style="background-image: url(./img/swiper/03@2x.jpg);">
-                                <h5 class="title-5 swiper-slide__title">Lorem, ipsum dolor.</h5>
-                                <p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Voluptate qui provident nemo
-                                    quis, similique laborum aliquam minus accusamus asperiores</p>
-                                <a class="swiper-slide__link" href="#!">Подробнее...</a>
+                            <div class="swiper-slide__block" style="background-image: url(./img/services/03.jpg);">
+                                <div class="swiper-slide__content">
+                                    <h5 class="title-5 swiper-slide__title">Lorem, ipsum dolor.</h5>
+                                    <p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Voluptate qui provident nemo
+                                        quis, similique laborum aliquam minus accusamus asperiores</p>
+                                    <a class="swiper-slide__link" data-fancybox href="#hidden">Подробнее...</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__block" style="background-image: url(./img/swiper/04@2x.jpg);">
-                                <h5 class="title-5 swiper-slide__title">Lorem, ipsum dolor.</h5>
-                                <p class="swiper-slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Voluptate qui provident nemo
-                                    quis, similique laborum aliquam minus accusamus asperiores</p>
-                                <a class="swiper-slide__link" href="#!">Подробнее...</a>
-                            </div>
-                        </div>
+
+
 
 
 
@@ -380,6 +382,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
+
 
         </section>
 
@@ -452,6 +455,45 @@
 
         </script>
     </footer>
+
+
+    <div class="modal-services" style="display: none;" id="hidden">
+        <div class="header-content__form">
+            <p class="header-form__text">Что нужно сделать + чтобы получить + где/когда</p>
+
+            <div class="header-form">
+                <h5 class="title-5 header-form__title">Узнать стоимость вашего решения</h5>
+
+                <form class="form" action="" method="post">
+
+                    <div class="form-wrapper__input">
+                        <div class="form-wrapper__label">
+                            <label for="name">Имя</label>
+                            <input id="name" class="header-form__input" type="text" placeholder="Иван">
+                        </div>
+                        <div class="form-wrapper__label">
+                            <label for="tel">Телефон</label>
+                            <input id="tel" class="header-form__input" type="tel" placeholder="+7 (999) 999-99-99">
+
+                        </div>
+                        <div class="form-wrapper__label">
+                            <label for="email">Email</label>
+                            <input id="email" class="header-form__input" type="email" placeholder="dai@tona.online">
+                        </div>
+
+                    </div>
+
+                    <div class="form-wrapper__btn">
+                        <button class="btn-form" type="button">Узнать</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=a58693e5-1e8e-4308-8b3c-45bf0e2e603e&lang=ru_RU"
         type="text/javascript"></script>

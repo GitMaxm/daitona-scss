@@ -16,11 +16,14 @@
 
 	--nm-color-border: #1a1d21ec;
 	--nm-color-blue: #6eb0d0;
+	--nm-color-clients: #fff;
 }
 
 .dark {
 	// --page-bg: #252526;
+	--nm-color-clients: #de6546;
 	--text-color: #fff;
 	--page-bg: rgb(41 56 70);
-	--dark-bg: rgb(49, 49, 90) --nm-color-border: #de6546;
+	// --dark-bg: rgb(49, 49, 90);
+	--nm-color-border: #de6546;
 }
