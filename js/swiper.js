@@ -15,9 +15,8 @@ const swiper = new Swiper('.swiper', {
 	},
 
 	loop: true,
-	autoplay: {
-		delay: 3000,
-	},
+	autoplay: true,
+	autoplaySpeed: 2000,
 
 	keyboard: {
 		enabled: true,
