@@ -1,0 +1,167 @@
+.footer {
+	padding: 35px 0;
+
+	@media (max-width: 750px) {
+		padding: 20px 0;
+	}
+}
+
+// подвал нижняя часть
+.footer-top {
+	border-bottom: 1px solid var(--text-color);
+	padding-bottom: 70px;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+
+	@media (max-width: 1000px) {
+		gap: 30px;
+	}
+
+	@media (max-width: 870px) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	@media (max-width: 750px) {
+		padding-bottom: 35px;
+	}
+
+	// левая часть
+	&__title {
+		max-width: 350px;
+	}
+	&__text {
+		margin-top: 24px;
+		margin-bottom: 27px;
+
+		@media (max-width: 500px) {
+			margin-top: 18px;
+			margin-bottom: 22px;
+		}
+	}
+
+	&__copyright {
+		font-size: 13px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+	}
+
+	// Правая часть
+
+	&__lists {
+		display: flex;
+		gap: 50px;
+
+		@media (max-width: 1000px) {
+			gap: 30px;
+		}
+
+		@media (max-width: 870px) {
+			width: 350px;
+			justify-content: space-between;
+		}
+
+		@media (max-width: 410px) {
+			width: 100%;
+			gap: 15px;
+		}
+		@media (max-width: 360px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__nav {
+		a:before {
+			margin-right: 10px;
+			content: "• ";
+		}
+
+		a {
+			color: var(--text-color);
+		}
+
+		@media (max-width: 440px) {
+			width: 130px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+
+		h4 {
+			font-size: clamp(1.125rem, 0.966rem + 0.8vw, 1.563rem); // 25-18
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 22px;
+			list-style-type: disc;
+
+			a {
+				color: var(--text-color);
+			}
+
+			@media (max-width: 700px) {
+				gap: 14px;
+			}
+		}
+
+		@media (max-width: 700px) {
+			gap: 14px;
+		}
+	}
+}
+
+// линия по центру
+.footer-line {
+	width: 1px;
+	background: var(--color-black);
+
+	@media (max-width: 940px) {
+		display: none;
+	}
+}
+
+// подвал нижняя часть
+
+.footer-bot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 35px;
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	@media (max-width: 500px) {
+		padding-top: 20px;
+	}
+
+	&__policy {
+		display: flex;
+		gap: 30px;
+
+		a {
+			color: var(--text-color);
+		}
+
+		@media (max-width: 640px) {
+			gap: 15px;
+		}
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+}

@@ -1,0 +1,19 @@
+.logo-footer {
+    padding: 35px 0;
+
+    @media (max-width: 750px) {
+        padding: 20px 0;
+    }
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 70px;
+
+    @media (max-width: 750px) {
+        padding-bottom: 35px;
+    }
+}

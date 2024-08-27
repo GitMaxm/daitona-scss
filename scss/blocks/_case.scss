@@ -1,27 +1,132 @@
-.case {
-    padding: 120px 0;
-}
-.case-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 50px;
-}
-.case-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.cases {
+    padding: 35px 0;
 
-    &--last {
-        grid-column: 1 / 3;
+    @media (max-width: 750px) {
+        padding: 20px 0;
     }
 }
-.case__title {
-    margin-bottom: 100px;
+
+.cases-wrapper {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 70px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1260px) {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    @media (max-width: 750px) {
+        padding-bottom: 35px;
+        gap: 30px;
+    }
+
+    &__line {
+        width: 1px;
+        background: var(--color-black);
+
+        @media (max-width: 1260px) {
+            display: none;
+        }
+    }
 }
-.case-block__title {
-    font-weight: 500;
-    text-transform: uppercase;
+
+.cases-content {
+    max-width: 370px;
+
+    &__description {
+        font-size: clamp(0.688rem, 0.619rem + 0.34vw, 0.875rem); //11 - 14
+        font-weight: 500;
+    }
+
+    h2 {
+        margin-top: 8px;
+        margin-bottom: 23px;
+    }
+
+    button {
+        margin-top: 39px;
+    }
 }
+
+.cases-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+
+    &__line {
+        height: 1px;
+        background: var(--color-black);
+    }
+
+    &__block {
+        background-color: var(--color-black);
+        border-radius: 15px;
+
+        h4 {
+            color: var(--color-white);
+            font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem); // 24-16
+            line-height: 1.4;
+        }
+    }
+
+    &__img {
+        border-radius: 15px;
+        height: 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        transition:
+            height 0.3s ease,
+            opacity 0.3s ease;
+        opacity: 0.5; /* Полупрозрачный по умолчанию */
+
+        @media (max-width: 490px) {
+            height: 100px;
+        }
+
+        &--active {
+            height: 300px;
+            opacity: 1; /* Полная непрозрачность для активного элемента */
+
+            @media (max-width: 490px) {
+                height: 180px;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        padding: 30px 20px;
+        justify-content: space-between;
+
+        @media (max-width: 1000px) {
+            padding: 20px 20px;
+        }
+    }
+
+    &__btn {
+        background-color: var(--color-white);
+        border-radius: 3px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        padding: 7px 15px;
+
+        @media (max-width: 490px) {
+            padding: 5px 13px;
+        }
+    }
+}
+
+// Анимация
