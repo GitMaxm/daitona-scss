@@ -33,7 +33,7 @@
                             <div class="nav-info">
                                 <a class="nav-info--tel" href="tel:+79990008585">+7 (999) 000-85-85</a>
                                 <p>С 09:00 ДО 18:00</p>
-                                <a class="nav-info--tel-form" href="#!">Перезвонить мне</a>
+                                <a class="nav-info--tel-form" data-fancybox href="#hidden" href="#!">Перезвонить мне</a>
                             </div>
                         </div>
 
@@ -82,19 +82,19 @@
                 <div class="header-content__profit">
 
                     <div class="header-profit__block">
-                        <img src="img/profit/01.jpg" alt="">
+                        <img src="img/profit/01.png" alt="">
                         <h5 class="title-5 header-profit__title">ВЫГОДА</h5>
                         <p class="header-profit__text">Выгода + конкретика</p>
                     </div>
 
                     <div class="header-profit__block">
-                        <img src="img/profit/01.jpg" alt="">
+                        <img src="img/profit/01.png" alt="">
                         <h5 class="title-5 header-profit__title">ВЫГОДА</h5>
                         <p class="header-profit__text">Выгода + конкретика</p>
                     </div>
 
                     <div class="header-profit__block">
-                        <img src="img/profit/01.jpg" alt="">
+                        <img src="img/profit/01.png" alt="">
                         <h5 class="title-5 header-profit__title">ВЫГОДА</h5>
                         <p class="header-profit__text">Выгода + конкретика</p>
                     </div>
@@ -521,8 +521,11 @@
                             <div class="footer-top__list">
                                 <h4 class="title-4">Contact Us</h4>
                                 <ul>
-                                    <li>г. Москва, Самая удобная улица,
-                                        <br> д. 100 1 этаж, офис 1
+                                    <li><a href="https://yandex.ru/maps/-/CDsXqANH" target="_blank">
+                                            г. Москва, Самая удобная улица,
+                                            <br> д. 100 1 этаж, офис 1
+                                        </a>
+
                                     </li>
                                     <li><a href="tel:+79990008585">+7 (999) 000-85-85</a></li>
                                     <li><a href="mailto:dai@tona.online">dai@tona.online</a></li>
@@ -640,37 +643,34 @@
 
 
     <div class="modal-services" style="display: none;" id="hidden">
-        <div class="header-content__form">
-            <p class="header-form__text">Что нужно сделать + чтобы получить + где/когда</p>
 
-            <div class="header-form">
-                <h5 class="title-5 header-form__title">Узнать стоимость вашего решения</h5>
+        <div class="header-form">
+            <h5 class="title-5 header-form__title">Узнать стоимость вашего решения</h5>
 
-                <form class="form" action="" method="post">
+            <form class="form" action="" method="post">
 
-                    <div class="form-wrapper__input">
-                        <div class="form-wrapper__label">
-                            <label for="name">Имя</label>
-                            <input id="name" class="header-form__input" type="text" placeholder="Иван">
-                        </div>
-                        <div class="form-wrapper__label">
-                            <label for="tel">Телефон</label>
-                            <input id="tel" class="header-form__input" type="tel" placeholder="+7 (999) 999-99-99">
-
-                        </div>
-                        <div class="form-wrapper__label">
-                            <label for="email">Email</label>
-                            <input id="email" class="header-form__input" type="email" placeholder="dai@tona.online">
-                        </div>
+                <div class="form-wrapper__input">
+                    <div class="form-wrapper__label">
+                        <label for="name">Имя</label>
+                        <input id="name" class="header-form__input" type="text" placeholder="Иван">
+                    </div>
+                    <div class="form-wrapper__label">
+                        <label for="tel">Телефон</label>
+                        <input id="tel" class="header-form__input" type="tel" placeholder="+7 (999) 999-99-99">
 
                     </div>
-
-                    <div class="form-wrapper__btn">
-                        <button class="btn-form" type="button">Узнать</button>
+                    <div class="form-wrapper__label">
+                        <label for="email">Email</label>
+                        <input id="email" class="header-form__input" type="email" placeholder="dai@tona.online">
                     </div>
 
-                </form>
-            </div>
+                </div>
+
+                <div class="form-wrapper__btn">
+                    <button class="btn-form" type="button">Узнать</button>
+                </div>
+
+            </form>
         </div>
     </div>
 

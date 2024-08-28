@@ -62,11 +62,11 @@ function btnDarkMode() {
 }
 
 // Убедимся, что DOM загружен, прежде чем выполнять функцию
-document.addEventListener('DOMContentLoaded', btnDarkMode);
-window.addEventListener('resize', function () {
-    "use strict";
-    window.location.reload();
-});
+// document.addEventListener('DOMContentLoaded', btnDarkMode);
+// window.addEventListener('resize', function () {
+//     "use strict";
+//     window.location.reload();
+// });
 
 // function btnDarkMode() {
 //     const btnDarkMode = document.querySelector(".dark-mode-btn");
