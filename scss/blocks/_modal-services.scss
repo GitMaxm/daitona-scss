@@ -2,8 +2,8 @@
     background-color: transparent !important;
 }
 .fancybox-slide--html .fancybox-close-small {
-    color: currentColor;
+    color: var(--color-white) !important;
     padding: 0px !important;
-    right: 65px !important;
-    top: 65px !important;
+    // right: 65px !important;
+    // top: 65px !important;
 }

@@ -9,6 +9,16 @@
 
     background-color: var(--page-bg) !important;
     border: 2px solid var(--nm-color-border);
+
+    @media (max-width: 900px) {
+        padding: 50px 100px;
+    }
+    @media (max-width: 700px) {
+        padding: 40px 80px;
+    }
+    @media (max-width: 540px) {
+        padding: 30px 20px;
+    }
 }
 
 .header-form__input {
@@ -40,6 +50,10 @@
 
             @media (max-width: 1370px) {
                 flex-direction: column;
+            }
+
+            @media (max-width: 700px) {
+                gap: 20px;
             }
         }
 
@@ -73,6 +87,10 @@
     width: 350px;
     height: 50px;
     color: var(--text-color-white);
-    font-size: 22px;
+    font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.375rem); // 22 - 18
     font-weight: 700;
+
+    @media (max-width: 550px) {
+        width: 200px;
+    }
 }

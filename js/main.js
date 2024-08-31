@@ -68,6 +68,11 @@ function btnDarkMode() {
 //     window.location.reload();
 // });
 
+
+
+
+
+
 // function btnDarkMode() {
 //     const btnDarkMode = document.querySelector(".dark-mode-btn");
 //     const btnIconMode = document.querySelector(".dark-mode-btn__icon");

@@ -1,10 +1,9 @@
-const swiper = new Swiper('.swiper', {
+const servicesSwiper = new Swiper('.services-swiper', {
 	effect: 'coverflow',
 	grabCursor: true,
 	centeredSlides: true,
-	slidesPerView: 3,
-	spaceBetween: 30,
 	speed: 600,
+	loop: true,
 
 	coverflowEffect: {
 		rotate: 50,
@@ -14,9 +13,10 @@ const swiper = new Swiper('.swiper', {
 		slideShadows: true,
 	},
 
-	loop: true,
-	autoplay: true,
-	autoplaySpeed: 2000,
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false,
+	},
 
 	keyboard: {
 		enabled: true,
@@ -26,5 +26,22 @@ const swiper = new Swiper('.swiper', {
 		el: '.swiper-pagination',
 		dynamicBullets: true,
 		clickable: true,
+	},
+
+	// Адаптивные настройки для различных разрешений
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 10,
+		},
+		600: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+
+		970: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+		},
 	},
 });

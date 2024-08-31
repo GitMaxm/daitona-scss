@@ -33,6 +33,22 @@
 
     gap: 40px;
 
+    @media (max-width: 680px) {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    &--even {
+        @media (max-width: 680px) {
+            display: flex;
+            flex-direction: column-reverse;
+
+            text-align: center;
+        }
+    }
+
     &-header {
         display: flex;
         justify-items: center;
@@ -61,8 +77,20 @@
             }
         }
     }
-}
 
-// .about__content-video {
-//     max-width: 600px;
-// }
+    &-video {
+        width: 600px;
+
+        @media (max-width: 650px) {
+            max-width: 500px;
+        }
+
+        @media (max-width: 540px) {
+            max-width: 400px;
+        }
+
+        @media (max-width: 440px) {
+            max-width: 350px;
+        }
+    }
+}

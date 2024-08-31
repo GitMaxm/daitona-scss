@@ -1,43 +1,68 @@
 .clients {
     padding-top: 120px;
-}
-.clients__title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.clients__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 20px;
 
-    transition:
-        transform 0.3s ease-in-out,
-        box-shadow 0.3s ease-in-out;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
 
-    @media (max-width: 1050px) {
-        grid-template-columns: repeat(3, 1fr);
+        transition:
+            transform 0.3s ease-in-out,
+            box-shadow 0.3s ease-in-out;
+
+        @media (max-width: 1050px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 750px) {
+            display: none;
+        }
+
+        div {
+            max-width: 100%;
+            width: 220px;
+            height: 220px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            // border-radius: 50%;
+            // background-color: var(--nm-color-clients);
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        div:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
-.clients__grid div {
-    max-width: 100%;
-    width: 220px;
-    height: 220px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    // border-radius: 50%;
-    // background-color: var(--nm-color-clients);
+.clients-slider {
+    width: 100%;
+    max-width: 800px;
+
+    margin: auto;
+    @media (max-width: 750px) {
+        display: block !important;
+    }
+
+    &__wrapper {
+        align-items: center !important;
+    }
 }
 
-.clients__grid div img {
-    max-width: 100%;
-}
-
-.clients__grid div:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.clients-slider img {
+    width: 100%;
+    display: block;
 }

@@ -19,57 +19,56 @@
 
         <div class="container">
 
-            <nav class="nav">
+            <nav class="nav-header">
                 <div class="container">
-
                     <div class="nav-column">
-                        <div class="nav-row nav-header">
+                        <div class="nav-row nav-row__top">
                             <div class="logo">
-                                <img class="logo-img" src="img/logo/logo-day.png" alt="">
+                                <img class="logo-img" src="img/logo/logo-day.png" alt="Логотип компании">
                             </div>
-
                             <p>Решаем проблемы при помощи контента и событийного маркетинга с 2016 года</p>
-
-                            <div class="nav-info">
+                            <address class="nav-info">
                                 <a class="nav-info--tel" href="tel:+79990008585">+7 (999) 000-85-85</a>
                                 <p>С 09:00 ДО 18:00</p>
-                                <a class="nav-info--tel-form" data-fancybox href="#hidden" href="#!">Перезвонить мне</a>
-                            </div>
+                                <a class="nav-info--tel-form" data-fancybox href="#hidden">Перезвонить мне</a>
+                            </address>
                         </div>
-
-                        <div class="nav-row nav-footer">
-
-                            <ul class="nav-list">
-                                <li class="nav-list__item"><a href="#about" class="nav-list__link">О НАС</a>
-                                </li>
-                                <li class="nav-list__item">
-                                    <a href="#!" class="nav-list__link ">УСЛУГИ</a>
-                                </li>
-                                <li class="nav-list__item">
-                                    <a href="#case" class="nav-list__link">КЕЙСЫ</a>
-                                </li>
-                                <li class="nav-list__item">
-                                    <a href="#clients" class="nav-list__link">НАШИ КЛИЕНТЫ</a>
-                                </li>
-                                <li class="nav-list__item">
-                                    <a href="#!" class="nav-list__link">КОМАНДА МЕЧТЫ</a>
-                                </li>
-                                <li class="nav-list__item">
-                                    <a href="#contacts" class="nav-list__link">КОНТАКТЫ</a>
-                                </li>
-                            </ul>
-
+                        <div class="nav-row">
+                            <nav>
+                                <ul class="nav-list">
+                                    <li class="nav-list__item"><a href="#about" class="nav-list__link">О НАС</a></li>
+                                    <li class="nav-list__item"><a href="#!" class="nav-list__link">УСЛУГИ</a></li>
+                                    <li class="nav-list__item"><a href="#case" class="nav-list__link">КЕЙСЫ</a></li>
+                                    <li class="nav-list__item"><a href="#contacts" class="nav-list__link">КОНТАКТЫ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <button class="mobile-nav-btn">
+                                <div class="nav-icon"></div>
+                            </button>
                             <button class="dark-mode-btn dark-mode-btn__wrapper">
                                 <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
                                 <!-- <img src="./img/icons/moon.svg" alt="Dark mode" -->
                                 <!-- class="dark-mode-btn__icon"> -->
                             </button>
+                        </div>
 
+                        <div class="mobile-nav">
 
+                            <ul class="mobile-nav__list">
+                                <li><a href="#about">О НАС</a></li>
+                                <li><a href="#!">УСЛУГИ</a></li>
+                                <li><a href="#case">КЕЙСЫ</a></li>
+                                <li><a href="#contacts">КОНТАКТЫ</a></li>
+
+                                <li><a class="mobile-nav--close" href="#!"><img src="./img/icons/close.svg"
+                                            alt="Кнопка закрытия окна меню"></a>
+                                </li>
+
+                            </ul>
 
                         </div>
                     </div>
-
                 </div>
             </nav>
 
@@ -100,8 +99,6 @@
                     </div>
 
                 </div>
-
-
 
 
                 <div class="header-content__form">
@@ -144,6 +141,8 @@
 
     </header>
 
+
+
     <main>
 
         <!-- о нас -->
@@ -159,12 +158,11 @@
 
                 <div class="about__content about__content-header">
 
-                    <video class="about__content-video" width="600px" controls autoplay loop>
-
+                    <video class="about__content-video" autoplay loop muted playsinline>
                         <source src="img/video/2317759_business_infographics_stock market_3840x2160.mp4"
                             type="video/mp4" />
-
                     </video>
+
 
                     <div class="about__content-text about__content-text__header">
                         <h4 class="title-4">Чем услуга полезна для бизнеса + проморолик</h4>
@@ -199,7 +197,7 @@
                     </picture>
                 </div>
 
-                <div class="about__content">
+                <div class="about__content about__content--even">
 
                     <picture class="about__content-img">
                         <img src="img/about/02.jpg" alt="">
@@ -274,11 +272,24 @@
                 </div>
 
             </div>
+
+            <div class="clients-slider swiper none">
+                <div class="swiper-wrapper clients-slider__wrapper">
+                    <!-- Слайды с картинками -->
+                    <div class="swiper-slide"><img src="img/clients/1.png" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="img/clients/2.webp" alt="Client 2"></div>
+                    <div class="swiper-slide"><img src="img/clients/3.png" alt="Client 3"></div>
+                    <div class="swiper-slide"><img src="img/clients/4.png" alt="Client 4"></div>
+                    <div class="swiper-slide"><img src="img/clients/5.png" alt="Client 4"></div>
+                    <div class="swiper-slide"><img src="img/clients/6.png" alt="Client 4"></div>
+                    <div class="swiper-slide"><img src="img/clients/7.png" alt="Client 4"></div>
+                    <!-- Добавьте больше слайдов по необходимости -->
+                </div>
+            </div>
+
+
         </section>
 
-        <!-- отзывы -->
-        <!-- <section class="reviews">
-        </section> -->
 
         <!-- работы, кейсы /старые  -->
         <!-- <section class="case" id="case">
@@ -403,12 +414,12 @@
                 </div>
 
                 <!-- Slider main container -->
-                <div class="swiper no-select">
+                <div class="services-swiper no-select">
 
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide services-slide">
                             <div class="swiper-slide__block" style="background-image: url(./img/services/01.jpg);">
 
                                 <div class="swiper-slide__content">
@@ -685,7 +696,9 @@
 
     <!-- <script src="js/map.js"></script> -->
     <script src="js/main.js"></script>
+    <script src="js/mobile-nav.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/clients.js"></script>
 
 </body>
 
