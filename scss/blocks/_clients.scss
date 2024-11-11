@@ -1,6 +1,4 @@
 .clients {
-    padding-top: 120px;
-
     &__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -50,19 +48,19 @@
 
 .clients-slider {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
 
     margin: auto;
-    @media (max-width: 750px) {
-        display: block !important;
-    }
+    // @media (max-width: 750px) {
+    //     display: block !important;
+    // }
 
     &__wrapper {
         align-items: center !important;
     }
-}
 
-.clients-slider img {
-    width: 100%;
-    display: block;
+    img {
+        width: 100%;
+        display: block;
+    }
 }

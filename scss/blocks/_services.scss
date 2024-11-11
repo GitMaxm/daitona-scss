@@ -1,22 +1,7 @@
 /* Swiper styles */
 
 .services {
-    margin: 0;
-    padding: 30px 0 60px;
-
-    // background-color: #284b59;
-    // background-image: radial-gradient(
-    // 	circle,
-    // 	rgb(44, 83, 100),
-    // 	rgb(32, 58, 67),
-    // 	rgb(15, 32, 39)
-    // );
-    background-color: var(--page-bg);
     overflow: hidden;
-
-    @media (max-width: 750px) {
-        padding: 20px 0 40px;
-    }
 }
 
 .services-swiper {
@@ -24,6 +9,8 @@
     // width: 770px;
     padding-bottom: 50px !important;
     padding-top: 50px !important;
+
+    overflow: hidden !important;
 }
 
 .swiper-slide {
@@ -51,6 +38,7 @@
     // }
 
     &__block {
+        border-radius: var(--border-radius);
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -61,6 +49,7 @@
 
     &__block:after {
         content: "";
+        border-radius: var(--border-radius);
         display: block;
         width: 100%;
         height: 100%;

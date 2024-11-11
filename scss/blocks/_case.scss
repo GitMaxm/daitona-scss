@@ -1,16 +1,10 @@
 .cases {
-    // padding: 35px 0;
-    padding: 120px 0;
 
-    @media (max-width: 750px) {
-        // padding: 20px 0;
-        padding: 60px 0;
-    }
 }
 
 .cases-wrapper {
     border-bottom: 1px solid var(--text-color);
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -29,7 +23,7 @@
 
     &__line {
         width: 1px;
-        background: var(--color-black);
+        background: var(--text-color);
 
         @media (max-width: 1260px) {
             display: none;

@@ -13,6 +13,10 @@ body {
 
 	font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem); // 18 - 14
 	font-weight: 300;
+
+	border: 1px solid var(--text-color);
+	border-radius: var(--border-radius);
+	margin: 15px;
 }
 
 img {
@@ -44,3 +48,5 @@ img {
 	font-size: clamp(1.125rem, 0.943rem + 0.91vw, 1.625rem); //26 - 18
 	font-weight: 500;
 }
+
+
