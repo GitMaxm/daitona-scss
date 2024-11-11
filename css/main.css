@@ -422,9 +422,14 @@ img {
     max-width: 400px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   .about__content-video {
-    max-width: 350px;
+    max-width: 320px;
+  }
+}
+@media (max-width: 374px) {
+  .about__content-video {
+    max-width: 270px;
   }
 }
 .about__content-img img {
