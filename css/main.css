@@ -108,7 +108,7 @@ legend {
   --nm-color-border: #1a1d21ec;
   --nm-color-blue: #6eb0d0;
   --nm-color-clients: #fff;
-  --border-radius: 10px;
+  --border-radius: 0px;
 }
 
 .dark {
