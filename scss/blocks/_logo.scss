@@ -1,5 +1,8 @@
-
 .logo {
     width: 220px;
     min-width: 220px;
+}
+.logo-footer .logo {
+    max-width: 320px !important;
+    width: 100%;
 }
